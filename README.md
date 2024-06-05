@@ -25,7 +25,7 @@ This project is a REST API built with Node.js, Express.js, and MongoDB to manage
    - Create a .env file in the root directory.
    - Add your MongoDB connection string.
    ```bash
-   MONGO_URI=your_mongodb_uri
+   MONGO_URL=your_mongodb_uri
 ## Usage
 1. Start the server:
    ```bash
