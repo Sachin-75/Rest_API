@@ -30,5 +30,5 @@ This project is a REST API built with Node.js, Express.js, and MongoDB to manage
 1. Start the server:
    ```bash
    npm start
-2. Access the API at `http://localhost:3000`
+2. Access the API at `http://localhost:5000`
    
