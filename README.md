@@ -18,3 +18,17 @@ This project is a REST API built with Node.js, Express.js, and MongoDB to manage
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/rest_api_electronics.git
+2. Install dependencies:
+   ```bash
+   npm install
+3. Set up environment variables:
+   - Create a .env file in the root directory.
+   - Add your MongoDB connection string.
+   ```bash
+   MONGO_URI=your_mongodb_uri
+## Usage
+1. Start the server:
+   ```bash
+   npm start
+2. Access the API at `http://localhost:3000`
+   
