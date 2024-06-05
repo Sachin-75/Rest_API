@@ -26,5 +26,17 @@
         "price": 107,
         "feature": true,
         "company": "Mi"
+    },
+    {
+        "name": "laptop",
+        "price": 204,
+        "feature": false,
+        "company": "Mi"
+    },
+    {
+        "name": "keypad",
+        "price": 107,
+        "feature": false,
+        "company": "Mi"
     }
 ]

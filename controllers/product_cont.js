@@ -1,7 +1,17 @@
 const Product = require("../model/product_model");
 
 const getProductCont = async(req, res) =>{
-    const apiData = await Product.find({name:"iphone"});
+    const {company, name} = req.query;
+    const comQuery = {};
+    if(company){
+        comQuery.company = company;
+        console.log(comQuery);
+    }
+    if(name){
+        comQuery.name = name;
+        console.log(comQuery);
+    }
+    const apiData = await Product.find(comQuery);
     res.status(201).json({ apiData })
 }
 
