@@ -1,7 +1,7 @@
 const Product = require("../model/product_model");
 
 const getProductCont = async(req, res) =>{
-    const {company, name, feature, sort} = req.query;
+    const {company, name, feature, sort, select} = req.query;
     const comQuery = {};
     if(company){
         comQuery.company = company;
@@ -17,8 +17,13 @@ const getProductCont = async(req, res) =>{
     let resultApi = Product.find(comQuery);
 
     if(sort){
-        let sortIssueFix = sort.replace(","," ");
+        let sortIssueFix = sort.split(",").join(" ");
         resultApi = resultApi.sort(sortIssueFix);
+    }
+
+    if(select){
+        let selectIssueFix = select.split(",").join(" ");
+        resultApi = resultApi.select(selectIssueFix);
     }
 
     const apiData = await resultApi;
