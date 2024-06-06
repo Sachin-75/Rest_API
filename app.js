@@ -9,7 +9,7 @@ app.use("/api/product",route);
 
 
 app.get("/",(req,res)=>{
-    res.status(201).send("I am on home page");
+    res.status(201).json({msg: "I am on home page"});
 })
 
 const listening = async() => {
