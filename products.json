@@ -3,40 +3,240 @@
         "name": "iphone",
         "price": 112,
         "feature": true,
-        "company": "apple"
+        "company": "apple",
+        "description": "Latest model iPhone with advanced features.",
+        "category": "mobile",
+        "stock": 100,
+        "discount": 10
     },
     {
         "name": "iphone10",
         "price": 1132,
         "feature": true,
-        "company": "apple"
+        "company": "apple",
+        "description": "iPhone 10 with improved camera and performance.",
+        "category": "mobile",
+        "stock": 50,
+        "discount": 5
     },
     {
         "name": "watch",
         "price": 204,
-        "company": "apple"
+        "company": "apple",
+        "description": "Apple watch with fitness tracking features.",
+        "category": "watch",
+        "stock": 200,
+        "discount": 15
     },
     {
         "name": "watch10",
         "price": 304,
-        "company": "apple"
+        "company": "apple",
+        "description": "Advanced version of Apple watch.",
+        "category": "watch",
+        "stock": 150,
+        "discount": 10
     },
     {
         "name": "watch11",
         "price": 107,
         "feature": true,
-        "company": "Mi"
+        "company": "Mi",
+        "description": "Mi watch with long battery life.",
+        "category": "watch",
+        "stock": 300,
+        "discount": 20
     },
     {
         "name": "laptop",
         "price": 204,
         "feature": false,
-        "company": "Mi"
+        "company": "Mi",
+        "description": "Mi laptop with high performance.",
+        "category": "laptop",
+        "stock": 100,
+        "discount": 5
     },
     {
         "name": "keypad",
         "price": 107,
         "feature": false,
-        "company": "Mi"
+        "company": "Mi",
+        "description": "Mi keypad with ergonomic design.",
+        "category": "accessory",
+        "stock": 400,
+        "discount": 10
+    },
+    {
+        "name": "Galaxy S21",
+        "price": 999,
+        "feature": true,
+        "company": "samsung",
+        "description": "Samsung Galaxy S21 with stunning display.",
+        "category": "mobile",
+        "stock": 75,
+        "discount": 8
+    },
+    {
+        "name": "Galaxy Note 20",
+        "price": 1299,
+        "feature": true,
+        "company": "samsung",
+        "description": "Samsung Galaxy Note 20 with S Pen.",
+        "category": "mobile",
+        "stock": 60,
+        "discount": 10
+    },
+    {
+        "name": "Galaxy Tab S7",
+        "price": 649,
+        "company": "samsung",
+        "description": "Samsung Galaxy Tab S7 for productivity.",
+        "category": "tablet",
+        "stock": 80,
+        "discount": 12
+    },
+    {
+        "name": "Galaxy Watch 3",
+        "price": 399,
+        "company": "samsung",
+        "description": "Samsung Galaxy Watch 3 with health monitoring.",
+        "category": "watch",
+        "stock": 150,
+        "discount": 18
+    },
+    {
+        "name": "HP Spectre x360",
+        "price": 1199,
+        "feature": true,
+        "company": "hp",
+        "description": "HP Spectre x360 with convertible design.",
+        "category": "laptop",
+        "stock": 90,
+        "discount": 10
+    },
+    {
+        "name": "HP Envy 13",
+        "price": 899,
+        "company": "hp",
+        "description": "HP Envy 13 with sleek design.",
+        "category": "laptop",
+        "stock": 120,
+        "discount": 5
+    },
+    {
+        "name": "HP Omen 15",
+        "price": 1249,
+        "feature": true,
+        "company": "hp",
+        "description": "HP Omen 15 with powerful gaming performance.",
+        "category": "laptop",
+        "stock": 80,
+        "discount": 15
+    },
+    {
+        "name": "HP Pavilion 14",
+        "price": 599,
+        "company": "hp",
+        "description": "HP Pavilion 14 for everyday use.",
+        "category": "laptop",
+        "stock": 110,
+        "discount": 10
+    },
+    {
+        "name": "Dell XPS 13",
+        "price": 999,
+        "feature": true,
+        "company": "dell",
+        "description": "Dell XPS 13 with infinity display.",
+        "category": "laptop",
+        "stock": 85,
+        "discount": 8
+    },
+    {
+        "name": "Dell Inspiron 15",
+        "price": 649,
+        "company": "dell",
+        "description": "Dell Inspiron 15 for budget users.",
+        "category": "laptop",
+        "stock": 130,
+        "discount": 5
+    },
+    {
+        "name": "Dell G5 15",
+        "price": 1149,
+        "feature": true,
+        "company": "dell",
+        "description": "Dell G5 15 for gaming enthusiasts.",
+        "category": "laptop",
+        "stock": 70,
+        "discount": 10
+    },
+    {
+        "name": "Dell Latitude 14",
+        "price": 849,
+        "company": "dell",
+        "description": "Dell Latitude 14 for business users.",
+        "category": "laptop",
+        "stock": 100,
+        "discount": 7
+    },
+    {
+        "name": "Mi Band 6",
+        "price": 49,
+        "feature": true,
+        "company": "Mi",
+        "description": "Mi Band 6 with AMOLED display.",
+        "category": "accessory",
+        "stock": 200,
+        "discount": 15
+    },
+    {
+        "name": "Mi 11",
+        "price": 749,
+        "feature": true,
+        "company": "Mi",
+        "description": "Mi 11 with Snapdragon processor.",
+        "category": "mobile",
+        "stock": 90,
+        "discount": 8
+    },
+    {
+        "name": "Mi Notebook Pro",
+        "price": 999,
+        "company": "Mi",
+        "description": "Mi Notebook Pro with high performance.",
+        "category": "laptop",
+        "stock": 80,
+        "discount": 10
+    },
+    {
+        "name": "Mi TV 4A",
+        "price": 399,
+        "company": "Mi",
+        "description": "Mi TV 4A with 4K resolution.",
+        "category": "other",
+        "stock": 150,
+        "discount": 20
+    },
+    {
+        "name": "iPad Pro",
+        "price": 799,
+        "feature": true,
+        "company": "apple",
+        "description": "Apple iPad Pro with A12Z Bionic chip.",
+        "category": "tablet",
+        "stock": 70,
+        "discount": 12
+    },
+    {
+        "name": "MacBook Pro",
+        "price": 1299,
+        "feature": true,
+        "company": "apple",
+        "description": "Apple MacBook Pro with M1 chip.",
+        "category": "laptop",
+        "stock": 60,
+        "discount": 5
     }
 ]

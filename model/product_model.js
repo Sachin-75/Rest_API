@@ -5,29 +5,46 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    price : {
+    price: {
         type: Number,
         required: [true, "Price must be entered"]
     },
-    feature : {
+    feature: {
         type: Boolean,
         default: false,
-    }, 
-    rates : {
+    },
+    rates: {
         type: Number,
         default: 4.5
     },
-    createdAt : {
+    createdAt: {
         type: Date,
         default: Date.now()
     },
-    company : {
+    company: {
         type: String,
         enum: {
             values: ["apple", "samsung", "hp", "dell", "Mi"],
             message: `{VALUE} is not supported`
         }
+    },
+    description: {
+        type: String,
+        default: "No description available"
+    },
+    category: {
+        type: String,
+        enum: ["mobile", "laptop", "watch", "accessory", "tablet", "other"],
+        default: "other"
+    },
+    stock: {
+        type: Number,
+        default: 0
+    },
+    discount: {
+        type: Number,
+        default: 0
     }
-})
+});
 
 module.exports = mongoose.model("Product", productSchema);
