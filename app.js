@@ -3,14 +3,10 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const route = require("./routes/product_route");
-const connectDb = require("./db/connect")
+const connectDb = require("./db/connect");
 
 app.use("/api/product",route);
 
-
-app.get("/",(req,res)=>{
-    res.status(201).json({msg: "I am on home page"});
-})
 
 const listening = async() => {
     try {

@@ -5,12 +5,12 @@ const getProductCont = async(req, res) =>{
     const comQuery = {};
 
     if (company) {
-        comQuery.company = company;
+        comQuery.company = { $regex: company, $options: "m" };
         console.log(comQuery);
     }
     
     if (feature) {
-        comQuery.feature = feature;
+        comQuery.feature = { $regex: feature, $options: "t" };;
     }
     
     if (name) {
@@ -19,7 +19,7 @@ const getProductCont = async(req, res) =>{
     }
     
     if (category) {
-        comQuery.category = category;
+        comQuery.category = { $regex: category, $options: "m" };
     }
     
     if (minStock || maxStock) {
@@ -50,20 +50,30 @@ const getProductCont = async(req, res) =>{
 
   
     let page = Number(req.query.page) || 1;
-    let limit = Number(req.query.limit) || 3;
+    let limit = Number(req.query.limit) || 5;
     let skip = (page - 1) * limit;
-
+ 
     resultApi = resultApi.skip(skip).limit(limit);
 
     
     const apiData = await resultApi;
-    res.status(201).json({ apiData });
+    res.status(201).json({ apiData, noContent: apiData.length });
 }
 
 const getProductContCheck = async(req, res) =>{
-    const apiData = await Product.find(req.query).select("name");
+    // const apiData = await Product.find(req.query).select("company");
+    const {company,name} = req.query;
+    const comQuer = {};
+    if(company){
+        comQuer.company = company;
+    }
+    if(name){
+        comQuer.name = { $regex: name, $options: "i" };
+    }
+    const apiData = await Product.find(comQuer);
+    const apiInfo = await apiData;
     console.log(req.query);
-    res.status(201).json({ apiData });
+    res.status(201).json({ apiInfo });
 }
 
 module.exports = { getProductCont, getProductContCheck };
